@@ -1,0 +1,331 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fornecedores</title>
+			<script type="text/javascript" src="../js/jquery.js"></script>
+			<script type="text/javascript" src="../js/bootstrap.js"></script>
+			<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+ <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=false">
+ </script>
+    <script type="text/javascript">
+    	window.location.hash = '#form';
+    </script>
+
+<script type="text/javascript">
+		 function initialize() { 
+		 	var mapOptions = { center: new google.maps.LatLng(-34.397, 150.644), zoom: 8, mapTypeId: google.maps.MapTypeId.ROADMAP }; 
+		 	var map2 = new google.maps.Map(document.getElementById("map_canvas2"), mapOptions); 
+		 	} 
+</script>
+
+
+
+			
+	
+			<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+			<link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.css">
+			<link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css">
+			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="../css/principal.css">
+			<script>
+				$(function(){
+					$(".dropdown-toggle").dropdown();
+				}); 
+
+			</script>
+
+
+</head>
+<body onload="initialize();">
+	<script>
+				$(function(){
+					$(".dropdown-toggle").dropdown();
+				}); 
+				$("#celular").mask("99/99/9999");
+			</script>
+	<div id="cabecalho">
+	
+	</div>
+<div id="centro">
+	<section>
+			 
+			            <div id="navbar" class="navbar navbar">
+			              <div class="navbar-inner">
+					              <ul class="nav" role="navigation" style="position: relative; left: 3.5%;">
+
+					                    <li class="dropdown">
+						                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+						                      	Cadastrar
+						                      <b class="caret"></b></a>
+							                      <ul class="dropdown-menu">
+							                        <li><a  href="Insumos.html">Produtos</a></li>
+							                        <li><a  href="Fornecedor.html">Fornecedores</a></li>     
+							                      </ul>
+					                    </li>
+				                    </li>
+				   
+				                    <li >
+					                      <a href="#">
+					                      	Vendas
+					                      </a>
+				                    </li>
+				        
+				                    <li >
+					                      <a href="#">
+					                      	Faturamento
+					                      </a>
+				                    </li>
+				            
+				                    <li >
+					                      <a href="#">
+					                   		Gerencia
+					                   	  </a>
+				                    </li>
+				              </ul>
+
+			                </div>
+			              </div>
+			            
+			      
+			        
+			   </section> 
+
+			   <div id="form">
+			   		<div id="form-title"> 
+			   			
+			   		</div>
+			   		
+
+			   			<div class="tabbable tabs-left">
+						  <ul class="nav nav-tabs" style="	background: #fcfff4; /* Old browsers */
+															/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+															background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmNmZmY0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjIlIiBzdG9wLWNvbG9yPSIjZGZlNWQ3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2IzYmVhZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+															background: -moz-linear-gradient(45deg,  #fcfff4 0%, #dfe5d7 62%, #b3bead 100%); /* FF3.6+ */
+															background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#fcfff4), color-stop(62%,#dfe5d7), color-stop(100%,#b3bead)); /* Chrome,Safari4+ */
+															background: -webkit-linear-gradient(45deg,  #fcfff4 0%,#dfe5d7 62%,#b3bead 100%); /* Chrome10+,Safari5.1+ */
+																background: -o-linear-gradient(45deg,  #fcfff4 0%,#dfe5d7 62%,#b3bead 100%); /* Opera 11.10+ */
+															background: -ms-linear-gradient(45deg,  #fcfff4 0%,#dfe5d7 62%,#b3bead 100%); /* IE10+ */
+															background: linear-gradient(45deg,  #fcfff4 0%,#dfe5d7 62%,#b3bead 100%); /* W3C */
+															filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+															height: 91.7%;" >
+
+
+						    <li class="active"><a href="#tab1" data-toggle="tab"><font color="#48990E">Cadastrar Fornecedor</font></a></li>
+    						<li><a href="#tab2" data-toggle="tab"><font color="#48990E">Atualizar Fornecedor</font></a></li>
+    						<li><a href="#tab3" data-toggle="tab"><font color="#48990E">Excluir Fornecedor</font></a></li>
+						  </ul>
+						  <div class="tab-content">
+						    <div class="tab-pane active" id="tab1" >
+						      <form class="form-horizontal">
+			   				<br />
+						   <div id="tables">
+						   <table class="form">
+								<tr>
+									<td>
+										<label>Nome da Empresa</label>
+										<input type="text" class="input-xxlarge" placeholder="nome fantasia"/>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<label>email</label>
+										<input type="email" class="input-xlarge" placeholder="exemplo@exemplo.com"/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Endereço</label>
+										<input type="text" class="input-xxlarge" placeholder="exemplo@exemplo.com"/>
+									</td>
+								</tr>
+							</table>
+							<br />
+							
+							<table class="form2">
+								<tr>	
+									<td width="51%">
+										<label>Estado</label>
+										<select class="input-large">
+											<option placeholder="selecione o estado"></option>
+										</select>
+									</td>
+									<td >
+										<label>Cidade</label>
+										<select class="input-large">
+											<option placeholder="selecione a cidade"></option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Telefone Residencial</label>
+										<input type="text" class="input-large" placeholder="digite apenas numeros"/>
+									</td>
+									<td>
+										<label>Celular</label>
+										<input type="text" class="input-large" placeholder="digite apenas numeros"/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>CNPJ</label>
+										<input type="text" class="input-large" placeholder="digite apenas numeros"/>
+									</td>
+									<td>
+										<label>CEP</label>
+										<input type="text" class="input-large" placeholder="digite apenas numeros"/>
+									</td>
+								</tr>
+								</table>
+
+								<table class="form" style="clear: both;">
+								<tr>
+									<td>
+										<label>Observações</label>
+										<textarea rows="4"  style="width:530px;"></textarea>
+									</td>
+								</tr>
+
+								<tr>
+									<td height="80px">
+										<button class="btn" type="button">Salvar</button>
+										<button class="btn" type="button">Cancelar</button>
+									</td>
+								</tr>
+
+								
+							</table>
+							</div>
+						</form>
+					
+					<div id="form-right">
+						
+							<div id="map_canvas" style="width:100%; height:100%"></div>
+
+					</div>
+				</div>
+						    <div class="tab-pane  active" id="tab2">
+						      
+						          <form class="form-horizontal">
+			   				<br />
+						   <div id="tables">
+						   <table class="form">
+								<tr>
+									<td>
+										<label>Razão Social</label>
+										<input type="text" class="input-xxlarge" placeholder="razão social" autofocus="true"/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Nome Fantasia</label>
+										<input type="text" class="input-xxlarge" placeholder="nome fantasia"/>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<label>email</label>
+										<input type="email" class="input-xlarge" placeholder="exemplo@exemplo.com"/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Endereço</label>
+										<input type="text" class="input-xxlarge" placeholder="exemplo@exemplo.com"/>
+									</td>
+								</tr>
+							</table>
+							<br />
+							
+							<table class="form2">
+								<tr>	
+									<td width="51%">
+										<label>Estado</label>
+										<select class="input-large">
+											<option placeholder="selecione o estado"></option>
+										</select>
+									</td>
+									<td >
+										<label>Cidade</label>
+										<select class="input-large">
+											<option placeholder="selecione a cidade"></option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Telefone Residencial</label>
+										<input type="text" class="input-large" placeholder="digite apenas numeros"/>
+									</td>
+									<td>
+										<label>Celular</label>
+										<input type="text" class="input-large" placeholder="digite apenas numeros"/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>CNPJ</label>
+										<input type="text" class="input-large" placeholder="digite apenas numeros"/>
+									</td>
+									<td>
+										<label>CEP</label>
+										<input type="text" class="input-large" placeholder="digite apenas numeros"/>
+									</td>
+								</tr>
+								</table>
+
+								<table class="form" style="clear: both;">
+								<tr>
+									<td>
+										<label>Observações</label>
+										<textarea rows="4"  style="width:530px;"></textarea>
+									</td>
+								</tr>
+
+								<tr>
+									<td height="80px">
+										<button class="btn" type="button">Salvar</button>
+										<button class="btn" type="button">Cancelar</button>
+									</td>
+								</tr>
+
+								
+							</table>
+							</div>
+						</form>
+					
+					<div id="form-right">
+						
+							<div id="map_canvas2" style="width:100%; height:100%"></div>
+
+					</div>
+					
+
+						    </div>
+						    <div class="tab-pane" id="tab3">
+						      	<div id="form-right">
+						      	</div>
+						    </div>
+						  </div>
+						</div>
+
+						
+							
+			   		
+				</div>
+
+
+	</div>
+
+	<div id="rodape">
+
+	</div>
+
+	
+</body>
+</html>
+
